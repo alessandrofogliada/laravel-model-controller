@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/' , [PageController::class, 'index'])->name('home');
+Route::get('/',[PageController::class , 'index'])->name('home');
 
-Route::get('/' , [PageController::class, 'about'])->name('about');
+Route::get('/chi-siamo',[PageController::class , 'about'])->name('about');
 
-Route::get('/' , [PageController::class, 'contacs'])->name('contacs');
+Route::get('/contatti',[PageController::class , 'contacts'])->name('contacts');
 
-Route::get('/' , [PageController::class, 'movies'])->name('movies');
+Route::get('/film' , [PageController::class, 'movies'])->name('movies');
